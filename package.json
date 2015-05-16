@@ -1,0 +1,21 @@
+{
+  "name": "DYK",
+  "version": "2.0.0",
+  "author": "Wassim CHEGHAM <wassim.chegham@gmail.com>",
+  "dependencies": {
+    "bower": "1.4.1"
+  },
+  "devDependencies": {
+    "gulp": "3.6.2",
+    "gulp-shell": "0.2.5",
+    "gulp-tsc": "0.9.0",
+    "gulp-typescript-package": "0.0.2-a",
+    "mocha": "*",
+    "run-sequence": "0.3.6",
+    "typescript": "^1.5.0-beta"
+  },
+  "scripts": {
+    "main": "gulp buildrun",
+    "test": "gulp build && mocha"
+  }
+}

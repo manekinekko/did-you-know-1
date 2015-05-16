@@ -1,0 +1,7 @@
+node_modules/
+dist/
+typings/
+app/components/
+app/script/*.js
+app/script/*.map
+app/js/
