@@ -47,37 +47,6 @@ h4 {
 	font-style: italic;
 	font-size: 15px;
 }
-dyk-timer {
-	width: 100%;
-	height: 4px;
-	top: 0;
-	position: fixed;
-	left: 0px;
-}
-dyk-timer div {
-	background: orange;
-	height: 100%;
-	width: 0;
-	border-radius: 0 4px 4px 0;
-	box-shadow: 0 0 20px orange;
-	-webkit-transition: all 1s linear;
-	-moz-transition: all 1s linear;
-	-ms-transition: all 1s linear;
-	transition: all 1s linear;
-}
-dyk-timer.animate div {
-	animation: timer 0s linear infinite;
-	animation-duration: 15s;
-
-	-webkit-animation: timer 0s linear infinite;
-	-webkit-animation-duration: 15s;
-
-	-moz-animation: timer 0s linear infinite;
-	-moz-animation-duration: 15s;
-
-	-ms-animation: timer 0s linear infinite;
-	-ms-animation-duration: 15s;
-}
 img:not(.store) {
 	width: 30%;
 	height: 20%;

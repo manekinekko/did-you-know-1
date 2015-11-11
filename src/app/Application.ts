@@ -1,18 +1,10 @@
 /// <reference path="typings/_custom.d.ts" />
 
-/**
- * The main DYK app module.
- *
- * @type {angular.Module}
- * @author Wassim CHEGHAM <maneki.nekko@gmail.com>
- * @version 2.0.0
- */
 import {Component} from 'angular2/angular2';
-import {Fact} from './components/fact/Fact';
-import {Loader} from './components/fact/Loader';
+import {Fact} from './components/Fact';
+import {LoadingIndicator} from './components/LoadingIndicator';
 
 @Component({
-    providers: [Loader],
     selector: 'dyk',
     template: `
     <header>
@@ -23,6 +15,6 @@ import {Loader} from './components/fact/Loader';
 			<dyk-random-facts></dyk-random-facts>
 		</article>
     `,
-    directives: [Fact]
+    directives: [Fact, LoadingIndicator]
 })
 export class DYK {}

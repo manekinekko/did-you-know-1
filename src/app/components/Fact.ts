@@ -1,11 +1,9 @@
-/// <reference path="../../typings/_custom.d.ts" />
+/// <reference path="../typings/_custom.d.ts" />
 
-import {Observable} from '@reactivex/rxjs/dist/cjs/Rx';
-import { Component } from 'angular2/angular2';
-import { FactStore } from './FactStore';
+import {Component} from 'angular2/angular2';
+import {FactStore} from '../services/FactStore';
 
 @Component({
-	providers: [FactStore],
 	selector: 'dyk-random-facts',
 	template: `
 <div>
@@ -21,9 +19,6 @@ export class Fact {
 	constructor(private store: FactStore) {
 		this.fact = 'Loading facts...';
 		this.store.fetch().subscribe(fact => this.fact = fact);
-	}
-
-	onInit() {
 	}
 
 }
