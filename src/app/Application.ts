@@ -26,30 +26,3 @@ import {Loader} from './components/fact/Loader';
     directives: [Fact]
 })
 export class DYK {}
-
-
-/*import {Http, ConnectionBackend, RequestOptions, BaseRequestOptions, Request, RequestMethods, Headers} from 'angular2/http';
-
-@Component({
-  selector: 'dyk',
-  viewProviders: [Http, ConnectionBackend, RequestOptions, BaseRequestOptions, Request, RequestMethods],
-  template: '{{ people | json }}'
-})
-export class DYK {
-  public people;
-  constructor(http: Http) {
-    http.request('', new Request({
-      url: 'http://localhost:3000/data/ALL.json',
-      method: '',
-      headers: new Headers(null),
-      body: '',
-      search: null,
-      merge: null
-    }))
-      // Call map on the response observable to get the parsed people object
-      .map(res => res.json())
-      // Subscribe to the observable to get the parsed people object and attach it to the
-      // component
-      .subscribe(people => this.people = people);
-  }
-}*/

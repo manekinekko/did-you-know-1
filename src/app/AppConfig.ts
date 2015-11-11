@@ -1,6 +1,6 @@
 /// <reference path="typings/_custom.d.ts" />
 
 export class Config {
-	static TIMER = 15;
-	static DATA_URL = '../data/ALL.json';
+	static TIMER = 15000; // in ms
+	static DATA_URL = 'data/ALL.json';
 }

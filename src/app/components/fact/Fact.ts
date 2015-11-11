@@ -1,3 +1,6 @@
+/// <reference path="../../typings/_custom.d.ts" />
+
+import {Observable} from '@reactivex/rxjs/dist/cjs/Rx';
 import { Component } from 'angular2/angular2';
 import { FactStore } from './FactStore';
 
@@ -13,20 +16,14 @@ import { FactStore } from './FactStore';
 })
 export class Fact {
 
-	private facts: {facts:string[]}[];
 	private fact: string;
 	
 	constructor(private store: FactStore) {
 		this.fact = 'Loading facts...';
+		this.store.fetch().subscribe(fact => this.fact = fact);
 	}
 
 	onInit() {
-		//this.fact = this.store.fetch();
-		//this.update();
-	}
-
-	update(){
-		setInterval(() => this.fact = this.store.fetch(), 3000);
 	}
 
 }

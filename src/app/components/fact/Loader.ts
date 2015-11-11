@@ -19,6 +19,6 @@ export class Loader implements ILoader {
 	}
 
 	public fetch(): Observable<any> {
-		return this.http.get(Config.DATA_URL).map((res: Response) => res.json());
+		return this.http.get(Config.DATA_URL).map((res: Response) => <any[]>res.json());
 	}
 }
